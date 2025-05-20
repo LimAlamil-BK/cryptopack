@@ -49,9 +49,9 @@ Description: This is a Python program that compress and encrypt spreadsheet/s us
 1. Clone the repository (https://github.com/LimAlamil-BK/cryptopack) to your local device. If you can't access, ask for permission to be added as collaborator. <br /> <br />
 
 2. The repository contains several files:
-   - `dist/zipper.exe` - This is the source code as an executable file.
+   - `dist/zipper.exe` - This is the source code as an executable file. This is accessed by the end-users.
    - `README.md` - This contains the documentation (how to use the program).
-   - `zipper.py` - This is the source code before being freezed into an executable file. <br /><br />
+   - `zipper.py` - This is the source code. This is accessed by the developers only. Changes in the program are made here and once done, this is converted into an executable file to be used by end-users.<br /><br />
    
 3. Install the following if you haven't done so in your local development environment:
    **Python** - This is the programming language used to write the source code. [How to install Python](https://www.digitalocean.com/community/tutorials/install-python-windows-10) [Download Python here](https://www.python.org/downloads/) <br />
@@ -59,9 +59,12 @@ Description: This is a Python program that compress and encrypt spreadsheet/s us
    
    After installing Python, install the following Python packages as well. Install them by running `pip install <package-name>` in the terminal (e.g., `pip install pandas`).
    - `pandas` - Python's library for data analysis and manipulation. This will be used to read the spreadsheets.
-   - `pyzipper` - A Python library for creating and reading password-protected ZIP files. <br /><br />
+   - `pyzipper` - A Python library for creating and reading password-protected ZIP files.
+   - `pyinstaller` - Used to make an executable file of the source code. <br /><br />
 
 4. To start making changes, open the repository and create a new branch by running `git branch <branch_name>` in the terminal (e.g., `git branch lim-bug-fixes`). This way, you are not directly making modification in the working source code. <br /><br />
+   💭 You are most likely going to work on the source code (`zipper.py`) only. Once done with your changes, convert the source code again into an executable file. To do this, run `pyinstaller --onefile zipper.py` in the terminal. If successful, the folders `dist` and `build`, and file `zipper.spec` will appear. The executable file will be inside the `dist` folder.
 
 5. Once done with your changes, commit your changes and push your branch to the repository. If your branch has no merge conflicts with the `dev` branch (development branch), proceed to merge. <br />
    ⚠️ Don't merge with the `main` branch unless you are absolutely sure that your branch works properly and error-free. Always merge with the `dev` branch first. If `dev` branch is non-existent, create it first by branching out from the `main` branch.
+   💭 You don't have to push everything to the repository. Just the `dist/` and `zipper.py` will do.
