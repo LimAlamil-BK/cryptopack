@@ -42,9 +42,10 @@ Description: This is a Python program that compress and encrypt spreadsheet/s us
 
 ## ❓ How to use (for developers)
 
-0. Pre-requisite knowledge/skills:
-- Python programming
-- Git version control <br /> <br />
+### Pre-requisite knowledge/skills:<br />
+[![My Skills](https://skillicons.dev/icons?i=python,git)](https://skillicons.dev)
+
+### Instructions
   
 1. Clone the repository (https://github.com/LimAlamil-BK/cryptopack) to your local device. If you can't access, ask for permission to be added as collaborator. <br /> <br />
 
